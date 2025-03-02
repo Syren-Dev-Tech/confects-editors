@@ -1,0 +1,15 @@
+{
+    "$schema": "https://unpkg.com/knip@5/schema.json",
+    "entry": [
+        "lib/editors.ts",
+        "src/main.tsx"
+    ],
+    "ignore": [
+        "dist/**/*"
+    ],
+    "ignoreDependencies": [
+        "eslint-plugin-react-hooks",
+        "eslint-plugin-react-refresh",
+        "tsconfig-paths"
+    ]
+}

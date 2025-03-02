@@ -1,0 +1,42 @@
+@use '~layout' as layout;
+@use '~styling' as styling;
+@use '~themes' as themes;
+@use '@chrisofnormandy/confetti/main.scss';
+
+@include themes.themeify();
+
+.app {
+    overflow: auto;
+    height: 100%;
+
+    .display {
+        @include layout.flex(false, true);
+        @include layout.wide(40px);
+
+        padding: 20px;
+
+        .show {
+            @include layout.flex-between(true);
+            @include layout.wide(40px);
+            @include styling.rounded(50px);
+
+            border: 1px dashed grey;
+            margin-top: 20px;
+            padding: 20px;
+
+            .col {
+                @include layout.flex(false, true);
+                @include layout.fullsize(4px);
+
+                padding: 2px;
+            }
+
+            .row {
+                @include layout.flex-even(true);
+                @include layout.fullsize(4px);
+
+                padding: 2px;
+            }
+        }
+    }
+}

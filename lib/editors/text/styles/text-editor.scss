@@ -1,0 +1,49 @@
+@use '~styling' as styling;
+@use '~layout' as layout;
+
+.input.text-editor {
+    @include layout.flex(true, true);
+
+    .editor {
+        @include layout.flex;
+        @include layout.fullsize;
+
+        position: relative;
+
+        textarea {
+            @include styling.rounded(10px, top);
+            @include layout.fullsize;
+
+            resize: none;
+            border: none;
+
+            padding: 3px;
+        }
+
+        .status-overlay {
+            @include layout.flex-center(true, true);
+            @include layout.fullsize;
+
+            position: absolute;
+            background-color: hsla(0, 100%, 100%, 0.2);
+            color: black;
+            font-size: 20px;
+            text-transform: capitalize;
+
+            transition: opacity 1s ease-out;
+
+            &.fading {
+                opacity: 0;
+            }
+        }
+    }
+
+    .editor-controls {
+        @include layout.flex-between(true);
+        @include layout.wide(8px);
+        @include styling.rounded(10px, bottom);
+
+        border-top: 2px solid;
+        padding: 4px;
+    }
+}

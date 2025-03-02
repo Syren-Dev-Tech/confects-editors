@@ -1,0 +1,64 @@
+{
+    "author": "chrisofnormandy",
+    "description": "A collection of React / JSX components.",
+    "keywords": [],
+    "license": "MIT",
+    "name": "@chrisofnormandy/confects-editors",
+    "packageManager": "yarn@4.6.0",
+    "type": "module",
+    "version": "0.0.0",
+    "files": [
+        "dist"
+    ],
+    "exports": {
+        "./style.css": "./dist/confects.css",
+        ".": {
+            "types": "./dist/lib/editors.d.ts",
+            "import": "./dist/editors.js",
+            "require": null
+        }
+    },
+    "dependencies": {
+        "@chrisofnormandy/concauses": "^0.0.0",
+        "@chrisofnormandy/confects": "^0.0.1",
+        "@chrisofnormandy/confetti": "^0.0.1",
+        "monaco-editor": "^0.52.2",
+        "sass": "^1.85.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.2",
+        "@types/react": "^19.0.2",
+        "@types/react-dom": "^19.0.2",
+        "@vitejs/plugin-react": "^4.3.4",
+        "eslint": "^9.17.0",
+        "eslint-plugin-react-hooks": "^5.1.0",
+        "eslint-plugin-react-refresh": "^0.4.16",
+        "knip": "^5.41.1",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "tsc-alias": "^1.8.10",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.7.2",
+        "vite": "^6.0.4",
+        "vite-tsconfig-paths": "^5.1.4"
+    },
+    "peerDependencies": {
+        "react": ">=19",
+        "react-dom": ">=19"
+    },
+    "scripts": {
+        "build": "yarn clean; tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json && vite build",
+        "bump:pre": "npm version --commit-hooks false --git-tag-version false prerelease",
+        "bump": "npm version --commit-hooks false --git-tag-version false patch",
+        "clean": "rm -r ./dist",
+        "dev": "DEV=1 vite",
+        "lint": "eslint --fix",
+        "prerelease": "yarn lint && yarn knip && yarn build && yarn bump:pre && git add --a",
+        "release": "yarn lint && yarn knip && yarn build && yarn bump && git add --a",
+        "sanity": "yarn typecheck && yarn lint && yarn knip",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+    },
+    "resolutions": {
+        "@chrisofnormandy/confects": "portal:/home/chris/github/confects"
+    }
+}

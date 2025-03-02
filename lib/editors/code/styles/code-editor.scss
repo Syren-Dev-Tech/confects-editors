@@ -1,0 +1,35 @@
+@use '~styling' as styling;
+@use '~layout' as layout;
+
+.input.code-editor {
+    @include layout.flex(false, true);
+    @include layout.wide(16px);
+    @include styling.rounded;
+
+    padding: 8px;
+    margin: 10px 0;
+
+    .header {
+        @include layout.flex-between(true);
+
+        .heading {
+            padding: 5px 10px;
+            font-size: 18px;
+        }
+    }
+
+    .editor-wrapper {
+        @include styling.rounded;
+        @include layout.fullsize;
+
+        .monaco-editor {
+            @include styling.rounded;
+
+            border: 2px solid;
+
+            .overflow-guard {
+                @include styling.rounded;
+            }
+        }
+    }
+}

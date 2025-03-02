@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "esModuleInterop": false,
+        "module": "ESNext",
+        "outDir": "./dist",
+        "rootDir": ".",
+        "skipLibCheck": true,
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ],
+        // Bundler stuff
+        "allowJs": true,
+        "checkJs": true,
+        "isolatedModules": true,
+        "jsx": "react-jsx",
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        // Linting
+        "allowSyntheticDefaultImports": true,
+        "composite": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitOverride": true,
+        "strict": true,
+    },
+    "include": [
+        "lib",
+        "src"
+    ],
+    "exclude": [
+        "./**/*.mjs",
+        "./dist/**/*"
+    ]
+}
