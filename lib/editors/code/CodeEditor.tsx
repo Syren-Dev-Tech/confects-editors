@@ -53,7 +53,7 @@ export function CodeEditor(
 
             editor.layout({
                 width: rect.width - BORDER_SIZE * 2,
-                height: 200
+                height: rect.height - BORDER_SIZE * 2
             });
         };
 
