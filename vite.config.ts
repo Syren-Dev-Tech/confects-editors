@@ -1,6 +1,6 @@
 import { defineConfig, loadEnv, UserConfig } from 'vite';
 import { resolve } from 'path';
-import { viteConfigAliases } from '@chrisofnormandy/confetti/config';
+import { viteConfigAliases } from '@syren-dev-tech/confetti/config';
 import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
 

@@ -1,8 +1,8 @@
 import './styles/text-editor.scss';
-import { Button } from '@chrisofnormandy/confects/buttons';
-import { getClassName } from '@chrisofnormandy/confects/helpers';
-import { HTML_TextAreaProps } from '@chrisofnormandy/confects/types';
-import { Icon } from '@chrisofnormandy/confects/decorations';
+import { Button } from '@syren-dev-tech/confects/buttons';
+import { getClassName } from '@syren-dev-tech/confects/helpers';
+import { HTML_TextAreaProps } from '@syren-dev-tech/confects/types';
+import { Icon } from '@syren-dev-tech/confects/decorations';
 import { useEffect, useRef, useState } from 'react';
 
 export type TextEditorProps = HTML_TextAreaProps;

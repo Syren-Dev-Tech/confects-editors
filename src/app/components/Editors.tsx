@@ -1,6 +1,6 @@
 import { CodeEditor, TextEditor } from 'lib/editors';
 import { Display } from './helpers/formatters';
-import { STYLES, themes } from '@chrisofnormandy/confetti/themes';
+import { STYLES, themes } from '@syren-dev-tech/confetti/themes';
 
 function CodeEditorDisplay() {
     return <Display heading='code-editor'>

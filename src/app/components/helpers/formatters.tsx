@@ -1,5 +1,5 @@
-import { HTML_DivProps } from '@chrisofnormandy/confects/types';
-import { getClassName } from '@chrisofnormandy/confects/helpers';
+import { HTML_DivProps } from '@syren-dev-tech/confects/types';
+import { getClassName } from '@syren-dev-tech/confects/helpers';
 
 function Show({ children, ...props }: HTML_DivProps) {
     return <div

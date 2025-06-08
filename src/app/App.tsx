@@ -1,5 +1,5 @@
 import './styles/app.scss';
-import { themes } from '@chrisofnormandy/confetti/themes';
+import { themes } from '@syren-dev-tech/confetti/themes';
 import { useEffect, useState } from 'react';
 import { Editors } from './components/Editors';
 

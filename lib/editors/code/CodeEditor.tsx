@@ -1,8 +1,8 @@
 import './styles/code-editor.scss';
 import './userWorkers';
-import { Button } from '@chrisofnormandy/confects/buttons';
-import { getClassName } from '@chrisofnormandy/confects/helpers';
-import { HTML_DivProps } from '@chrisofnormandy/confects/types';
+import { Button } from '@syren-dev-tech/confects/buttons';
+import { getClassName } from '@syren-dev-tech/confects/helpers';
+import { HTML_DivProps } from '@syren-dev-tech/confects/types';
 import { ReactNode, useEffect, useRef, useState } from 'react';
 import * as monaco from 'monaco-editor';
 
