@@ -3,10 +3,10 @@
     "description": "A collection of React / JSX components.",
     "keywords": [],
     "license": "MIT",
-    "name": "@chrisofnormandy/confects-editors",
+    "name": "@syren-dev-tech/confects-editors",
     "packageManager": "yarn@4.9.1",
     "type": "module",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "files": [
         "dist"
     ],
@@ -19,9 +19,9 @@
         }
     },
     "dependencies": {
-        "@chrisofnormandy/concauses": "^0.0.0-2",
-        "@chrisofnormandy/confects": "^0.0.1",
-        "@chrisofnormandy/confetti": "^0.0.1",
+        "@syren-dev-tech/concauses": "^0.1.0",
+        "@syren-dev-tech/confects": "^0.1.0",
+        "@syren-dev-tech/confetti": "^0.1.0",
         "monaco-editor": "^0.52.2",
         "sass": "^1.87.0"
     },
